@@ -1,220 +1,233 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portofolio Dwi Puji Agustin</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMAIT SMART YBN — School of Identity</title>
+  <meta name="description" content="SMAIT SMART YBN: sekolah menengah atas Islam terpadu yang membentuk pribadi sholih, mulia, analitis, responsif, dan tangguh.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
+  <!-- NAVBAR (logo di atas, tanpa kotak putih) -->
+  <header class="nav" id="nav">
+    <a href="#beranda" class="nav__brand" aria-label="SMAIT SMART YBN">
+      <img src="logo.png" alt="Logo SMAIT SMART YBN">
+    </a>
+    <nav class="nav__links" id="menu">
+      <a href="#smart">Nilai SMART</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#program">Program</a>
+      <a href="#ppdb">Pendaftaran</a>
+      <a href="#kontak">Kontak</a>
+      <a href="daftar.php" class="btn btn--orange btn--sm">Daftar PPDB</a>
+    </nav>
+    <button class="nav__toggle" id="toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
 
-        <nav>
-            <a href="#tentang">Tentang Saya</a>
-            <a href="#pendidikan">Pendidikan</a>
-            <a href="#keahlian">Keahlian</a>
-            <a href="#jadwal">Jadwal Kuliah</a>
-            <a href="#kontak">Kontak</a>
-        </nav>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <svg class="hero__globe" viewBox="0 0 600 600" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="300" cy="300" r="280"/>
+          <ellipse cx="300" cy="300" rx="140" ry="280"/>
+          <ellipse cx="300" cy="300" rx="220" ry="280"/>
+          <line x1="300" y1="20" x2="300" y2="580"/>
+          <ellipse cx="300" cy="300" rx="280" ry="90"/>
+          <ellipse cx="300" cy="300" rx="280" ry="180"/>
+          <line x1="20" y1="300" x2="580" y2="300"/>
+        </g>
+      </svg>
+      <div class="hero__inner">
+        <p class="hero__kicker">SMA Islam Terpadu SMART YBN</p>
+        <h1>School of<br>Identity</h1>
+        <p class="hero__lead">Kami membentuk siswa yang kuat dalam iman, tajam berpikir, dan siap berkontribusi untuk Indonesia dan dunia.</p>
+        <div class="hero__cta">
+          <a href="daftar.php" class="btn btn--orange">Daftar PPDB</a>
+          <a href="#smart" class="btn btn--ghost">Kenali nilai SMART</a>
+        </div>
+      </div>
+      <div class="hero__compass" aria-hidden="true"></div>
+    </section>
 
-        <h1>
-            Portofolio<br>
-            Dwi Puji Agustin
-        </h1>
+    <!-- SMART: elemen utama -->
+    <section class="section" id="smart">
+      <div class="wrap">
+        <h2 class="title">Lima karakter, satu identitas: <em>SMART</em></h2>
+        <p class="sub">Setiap huruf mewakili karakter yang kami tanamkan pada siswa, di kelas maupun di luar kelas.</p>
+      </div>
+      <div class="smart" id="smartList">
+        <article class="smart__item is-teal active" tabindex="0">
+          <span class="smart__letter">S</span>
+          <h3>Sholih</h3>
+          <p>Ibadah yang terjaga, akhlak yang baik, dan hati yang terikat pada nilai-nilai Islam dalam keseharian.</p>
+        </article>
+        <article class="smart__item is-orange" tabindex="0">
+          <span class="smart__letter">M</span>
+          <h3>Mulia</h3>
+          <p>Adab kepada guru, teman, dan lingkungan. Kemuliaan terlihat dari sikap, bukan sekadar nilai.</p>
+        </article>
+        <article class="smart__item is-teal" tabindex="0">
+          <span class="smart__letter">A</span>
+          <h3>Analitis</h3>
+          <p>Berpikir kritis, berwawasan luas, menalar dengan data, memecahkan masalah secara obyektif fan terstruktur.</p>
+        </article>
+        <article class="smart__item is-clay" tabindex="0">
+          <span class="smart__letter">R</span>
+          <h3>Responsif</h3>
+          <p>Peka terhadap lingkungan, perubahan zaman dan sigap terhadap kebutuhan masyarakat sekitar.</p>
+        </article>
+        <article class="smart__item is-teal" tabindex="0">
+          <span class="smart__letter">T</span>
+          <h3>Tangguh</h3>
+          <p>Kuat fisik, disiplin, tidak mudah menyerah, mampu mengendalikan diri, mengatur waktu dan berbagai urusan serta berpenghasilan.</p>
+        </article>
+      </div>
+    </section>
 
-        <p>
-            Mahasiswa Teknologi Rekayasa Multimedia
-            di Universitas Boash
-        </p>
+    <!-- TENTANG -->
+    <section class="section section--soft" id="tentang">
+      <div class="wrap about">
+        <div>
+          <h2 class="title">Tempat Bertumbuh, Menemukan Potensi, dan Menyiapkan Masa Depan.</h2>
+        </div>
+        <div class="about__text">
+          <p>SMAIT SMART YBN memadukan kurikulum nasional dengan pendidikan Islam terpadu. Siswa belajar sains, bahasa, dan teknologi, sambil memperdalam Al-Qur'an dan akhlak.</p>
+          <p>Peta Nusantara di atas buku terbuka pada logo kami punya arti sederhana: ilmu yang dipelajari di sini untuk dibawa pulang dan dibagikan ke seluruh Indonesia.</p>
+          <ul class="about__list">
+            <li>Lingkungan belajar yang islami dan suportif</li>
+            <li>Guru pendamping yang dekat dengan siswa</li>
+            <li>Pembiasaan ibadah dan literasi setiap hari</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    </header>
+    <!-- PROGRAM UNGGULAN -->
+    <section class="section" id="program">
+      <div class="wrap">
+        <h2 class="title">Program Unggulan</h2>
+        <div class="cards cards--3">
+          <article class="card">
+            <div class="card__icon">📖</div>
+            <h3>Tahsin, Tahfidz, Tafhim Al Qur'an</h3>
+            <p>Memperbaiki bacaan, menghafal, dan memahami Al-Qur'an.</p>
+          </article>
+          <article class="card card--teal">
+            <div class="card__icon">🕌</div>
+            <h3>Penguatan Ibadah dan Adab</h3>
+            <p>Pembiasaan ibadah dan adab dalam kehidupan sehari-hari.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🌱</div>
+            <h3>Pengembangan Diri (Life Skill Program)</h3>
+            <p>Mengembangkan potensi dan keterampilan hidup siswa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-
-    <!-- ISI WEBSITE -->
-    <main>
-
-        <!-- TENTANG SAYA -->
-        <section id="tentang">
-
-            <h2>Tentang Saya</h2>
-
-            <img src="foto.jpg" 
-                 alt="Foto profil Dwi Puji Agustin">
-
-            <p>
-                Halo! Nama saya Dwi Puji Agustin.
-                Saya merupakan mahasiswa Teknologi Rekayasa Multimedia
-                di Universitas Boash.
-            </p>
-
-            <p>
-                Saya memiliki ketertarikan terhadap dunia multimedia,
-                desain grafis, editing video, fotografi, dan teknologi.
-            </p>
-
-            <p>
-                Website ini dibuat sebagai tugas praktikum
-                Pemrograman Web menggunakan HTML dan CSS.
-            </p>
-
-        </section>
-
-
-        <!-- RIWAYAT PENDIDIKAN -->
-        <section id="pendidikan">
-
-            <h2>Riwayat Pendidikan</h2>
-
+    <!-- STANDAR KELULUSAN -->
+    <section class="section section--soft" id="kelulusan">
+      <div class="wrap">
+        <h2 class="title">Standar Kelulusan</h2>
+        <div class="std">
+          <article class="std__card">
+            <span class="std__tag">A</span>
+            <h3>Pendidikan akademis</h3>
             <ol>
-                <li>
-                    SMK BOASH 1 - Desain Komunikasi Visual
-                </li>
-
-                <li>
-                    Universitas Boash -
-                    Teknologi Rekayasa Multimedia
-                </li>
+              <li>Lulus 100%</li>
+              <li>TKA dengan nilai rata-rata di atas 80</li>
+              <li>Siap lanjut ke PTN</li>
             </ol>
+          </article>
+          <article class="std__card std__card--teal">
+            <span class="std__tag">B</span>
+            <h3>Memiliki karakter mulia seorang muslim</h3>
+            <ol>
+              <li>Memiliki akidah yang lurus (Ahlus sunnah wal jamaah).</li>
+              <li>Mampu melaksanakan ibadah dengan benar.</li>
+              <li>Kemampuan membaca, menghafal dan mentadaburi Al-Quran.</li>
+            </ol>
+          </article>
+          <article class="std__card">
+            <span class="std__tag">C</span>
+            <h3>Memiliki keterampilan hidup</h3>
+            <ol>
+              <li>Mengidentifikasi dan mengembangkan potensi diri.</li>
+              <li>Memiliki kemampuan komunikasi dan berorganisasi yang baik.</li>
+              <li>Mempunyai keterampilan untuk kemandirian finansial.</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- PPDB -->
+    <section class="section section--dark" id="ppdb">
+      <div class="wrap">
+        <h2 class="title title--light">Cara mendaftar</h2>
+        <ol class="steps">
+          <li><h3>Isi formulir</h3><p>Lengkapi data calon siswa secara online atau di sekolah.</p></li>
+          <li><h3>Kumpulkan berkas</h3><p>Serahkan dokumen yang dibutuhkan ke panitia PPDB.</p></li>
+          <li><h3>Ikuti seleksi</h3><p>Tes akademik, baca Al-Qur'an, dan wawancara.</p></li>
+          <li><h3>Daftar ulang</h3><p>Terima pengumuman, lalu selesaikan daftar ulang.</p></li>
+        </ol>
+        <div class="cta">
+          <p>Siap bergabung dengan keluarga besar SMART YBN?</p>
+          <div class="cta__btns">
+            <a href="daftar.php" class="btn btn--orange">Daftar Sekarang</a>
+            <a href="https://linktr.ee/rumahquranberkah" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Lihat Brosur</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- KONTAK -->
+    <section class="section section--soft contact" id="kontak">
+      <div class="wrap contact__inner">
+        <div>
+          <h2 class="title">Ada pertanyaan? Hubungi kami</h2>
+          <p class="sub">Admin SMART siap membantu informasi pendaftaran, biaya, dan kunjungan sekolah.</p>
+        </div>
+        <div class="contact__btns">
+          <a href="https://wa.me/6285881300343?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PPDB%20SMAIT%20SMART%20YBN." class="btn btn--orange" target="_blank" rel="noopener noreferrer">Hubungi Admin SMART</a>
+          <a href="https://wa.me/6285881300343?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PPDB%20SMAIT%20SMART%20YBN." class="btn btn--teal" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
+          <a href="https://www.instagram.com/smaitsmartybn?stkn=Z3hlcHc5Z3VrYzdh" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Instagram @smaitsmartybn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- HOBI DAN KEAHLIAN -->
-        <section id="keahlian">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <h3>SMAIT SMART YBN</h3>
+        <p>School of Identity</p>
+        <a href="daftar.php" class="btn btn--orange btn--sm footer__cta">Daftar PPDB</a>
+      </div>
+      <div>
+        <h4>Ikuti Kami</h4>
+        <ul class="footer__links">
+          <li><a href="https://www.instagram.com/smaitsmartybn?stkn=Z3hlcHc5Z3VrYzdh" target="_blank" rel="noopener noreferrer">Instagram SMAIT SMART YBN</a></li>
+          <li><a href="https://wa.me/6285881300343?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PPDB%20SMAIT%20SMART%20YBN." target="_blank" rel="noopener noreferrer">WhatsApp Admin SMART</a></li>
+          <li><a href="cek-status.php">Cek Status Pendaftaran</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>Admin SMART: 0858 8130 0343<br>Alamat: Jl. Bojong Neros, RT.03/RW.07, Curug, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16113</p>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> SMAIT SMART YBN. Seluruh hak cipta dilindungi.</p>
+  </footer>
 
-            <h2>Hobi dan Keahlian</h2>
-
-            <ul>
-                <li>Desain Grafis</li>
-                <li>Editing Video</li>
-                <li>UI/UX Design</li>
-                <li>Social Media Management</li>
-            </ul>
-
-        </section>
-
-
-        <!-- JADWAL KULIAH -->
-        <section id="jadwal">
-
-            <h2>Jadwal Kuliah</h2>
-
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>Hari</th>
-                        <th>Jam</th>
-                        <th>Mata Kuliah</th>
-                        <th>Dosen Pengajar</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <!-- JUMAT -->
-                    <tr>
-                        <td>Jumat</td>
-                        <td>17.00 - 19.00</td>
-                        <td>Probabilitas dan Statistika</td>
-                        <td>Joy Lawla Rizky, A.Md.T, S.Kom., M.Kom</td>
-                    </tr>
-
-                    <tr>
-                        <td>Jumat</td>
-                        <td>19.00 - 21.00</td>
-                        <td>Kepemimpinan dan Kewirausahaan</td>
-                        <td>Dr. Jumadi, SE</td>
-                    </tr>
-
-
-                    <!-- SABTU -->
-                    <tr>
-                        <td>Sabtu</td>
-                        <td>08.00 - 10.00</td>
-                        <td>Visualisasi dan Animasi 3D</td>
-                        <td>Hersanto Fajri, S.Ds., M.MD.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sabtu</td>
-                        <td>10.00 - 12.00</td>
-                        <td>Audio Visual</td>
-                        <td>Hersanto Fajri, S.Ds., M.MD.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sabtu</td>
-                        <td>13.00 - 15.00</td>
-                        <td>Grafika Komputer dan Pengolahan Citra</td>
-                        <td>Marastika Aji Bawono, S.Kom., M.Kom., MM</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sabtu</td>
-                        <td>15.00 - 17.00</td>
-                        <td>Pemrograman Berorientasi Objek</td>
-                        <td>Joy Lawla Rizky, A.Md.T, S.Kom., M.Kom</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sabtu</td>
-                        <td>19.00 - 21.00</td>
-                        <td>Pemrograman Berbasis Web</td>
-                        <td>Shofyan S.Kom, M.Kom</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-
-        <!-- KONTAK -->
-        <section id="kontak">
-
-            <h2>Kontak Saya</h2>
-
-            <p>
-                Kamu dapat menghubungi saya melalui email
-                atau media sosial.
-            </p>
-
-            <p>
-                Email:
-                <a href="mailto:pujiaugust2@gmail.com">
-                    pujiaugust2@gmail.com
-                </a>
-            </p>
-
-            <p>
-                Instagram:
-                <a href="https://www.instagram.com/pujiaugust_" target="_blank">
-                    @pujiaugust_
-                </a>
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            &copy; 2026 Dwi Puji Agustin
-        </p>
-
-    </footer>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
